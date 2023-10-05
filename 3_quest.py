@@ -1,5 +1,14 @@
+class User:
+ pass
+#print(User)
+
+user = User()
+user.name = 'john'
+user.surname = 'smit'
+#print(user.name)
+#print(user.surname)
+
 class Employee:
- gigast = None
  name = None
  age = None
  salary = None
