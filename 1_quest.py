@@ -19,16 +19,11 @@ class Car:
         pass
 
 class Jeap(Car):
-    def a(self):
-        jeap = Jeap()
-        jeap.color = 'Blue'
-        jeap.fuel = 120
-        jeap.max_speed = 200
-        jeap.seats = 5
+    def info(self):
         return (f"Информация о машине:  цвет:  {jeap.color}, Количество топлива:  {jeap.fuel}, "
                 f"Мест:  {jeap.seats}, Макс. скорость: {jeap.max_speed}")
 
-myCar = Jeap()
+myCar = Car()
 myCar.color = 'red'  # красим в красный цвет
 myCar.fuel = 50    # заливаем топливо
 myCar.max_speed = 90 # указываем скорость
@@ -36,4 +31,10 @@ myCar.seats = 4 # указываем кол-во мест
 myCar.go()
 myCar.turn()
 myCar.stop()
-print(myCar.a())
+print(myCar.info())
+jeap = Jeap()
+jeap.color = 'Blue'
+jeap.fuel = 120
+jeap.max_speed = 200
+jeap.seats = 5
+print(jeap.info())
